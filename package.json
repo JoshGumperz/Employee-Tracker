@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/JoshGumperz/Employee-Tracker/issues"
   },
-  "homepage": "https://github.com/JoshGumperz/Employee-Tracker#readme"
+  "homepage": "https://github.com/JoshGumperz/Employee-Tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.1.2",
+    "mysql2": "^2.2.5"
+  }
 }
