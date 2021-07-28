@@ -2,8 +2,8 @@ const initialQuestion = [
     {
         type: "list",
         message: "What would you like to do",
-        name: "initialQuestion",
-        choices: ["View All Employees", "Add Employees", "Update Employee Role", "View All Roles", "Add Role", "View All Departments", "Add Department"]
+        name: "initialInput",
+        choices: ["View All Employees", "Add Employees", "Update Employee Role", "View All Roles", "Add Role", "View All Departments", "Add Department", "Quit"]
     }
 ]
 
@@ -43,7 +43,7 @@ const employeeQuestions = [
     {
         type: "Input",
         message: "Enter New Employee Last Name:",
-        name: "employeeLasttName",
+        name: "employeeLastName",
     },
     {
         type: "list",
@@ -55,8 +55,21 @@ const employeeQuestions = [
         type: "list",
         message: "Enter New Employee's Manager:",
         name: "employeeManager",
+        choices: [{name: "none", value: null}]
+    }
+]
+
+const updateQuestions = [
+    {
+        type: "list",
+        message: "Which Employee Would You Like To Update?",
+        choices: [{name: "none", value: null}]
+    },
+    {
+        type: "list",
+        message: "What Role Would You Like To Assign Them?",
         choices: []
     }
 ]
 
-module.exports = { initialQuestion, departmentQuestion, roleQuestions, employeeQuestions}
+module.exports = { initialQuestion, departmentQuestion, roleQuestions, employeeQuestions, updateQuestions }
