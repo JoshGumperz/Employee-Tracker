@@ -63,11 +63,13 @@ const updateQuestions = [
     {
         type: "list",
         message: "Which Employee Would You Like To Update?",
-        choices: [{name: "none", value: null}]
+        name: "updatedEmployeeName",
+        choices: []
     },
     {
         type: "list",
         message: "What Role Would You Like To Assign Them?",
+        name:"employeeNewRole",
         choices: []
     }
 ]
