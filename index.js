@@ -149,6 +149,7 @@ function updateEmployee() {
       for(let i = 0; i < table.length; i++) {
         updateQuestions[0].choices.push({name: table[i].first_name + " " + table[i].last_name, value: table[i].id})
       }
+  
   connection.promise().query(`SELECT * FROM roles`)
   .then(data => {
     const table = data[0]
