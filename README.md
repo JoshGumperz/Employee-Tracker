@@ -5,7 +5,7 @@ For this assignment, We were tasked with creating a program that generates a dat
 
 ### Prerequisites
 
-In order to get started using the Employee Tracker, you'll need to have Node installed, you'll need to run the "npm i" command to install the necessary dependancies, and you'll need to change the "connection" variable in index.js to reflect your own username and password.
+In order to get started using the Employee Tracker, you'll need to have Node installed, you'll need to run the "npm i" command to install the necessary dependancies, and you'll need to change the information stored in the .env file to reflect your own username.password, and database.
 
 ## Getting Started
 

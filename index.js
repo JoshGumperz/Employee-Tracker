@@ -2,6 +2,14 @@ const inquirer = require("inquirer")
 const { initialQuestion, departmentQuestion, roleQuestions, employeeQuestions, updateQuestions } = require("./questions/questions")
 const cTable = require("console.table")
 const mysql = require("mysql2")
+require('dotenv').config()
+
+const connection = mysql.createConnection({
+  host: "localhost",
+  user: process.env.DB_USER,
+  database: process.env.DB,
+  password: process.env.DB_PW
+})
 
 function init() {
     inquirer.prompt(initialQuestion)
@@ -39,13 +47,6 @@ function init() {
     console.error(err)
   })
 }
-
-const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  database: "company",
-  password: "A9`5(]Ddr^7zQ^7)"
-})
 
 function choicesLoop(sqlStr, choices, role) {
     connection.promise().query(`${sqlStr}`)
