@@ -156,7 +156,6 @@ function updateEmployee() {
       updateQuestions[1].choices.push({name: table[i].title, value: table[i].id})
         }
 
-    console.log('updateQuestions--->', updateQuestions)
     inquirer.prompt(updateQuestions)
     .then (answer => {
       connection.query(`UPDATE employees
