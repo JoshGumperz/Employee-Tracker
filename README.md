@@ -12,7 +12,7 @@ In order to get started using the Employee Tracker, you'll need to have Node ins
 Once you've completed all the necessary prerequisites, you can start using the Employee Tracker. And in order to show you how to use it, I've included an instructional video that takes you through the steps of generating your own custom employee database. The video will be linked below, along with a step by step explanation. 
 
 
-Team Profile Generator Tutorial Video: https://drive.google.com/file/d/1Ghb9AqLPve-4f6FMQFfgvB_KFKkPX2FM/view?usp=sharing
+Tutorial Video: https://drive.google.com/file/d/1Ghb9AqLPve-4f6FMQFfgvB_KFKkPX2FM/view?usp=sharing
 
 If you need a little additional instruction, don't worry. Here's how it works:
 The first thing you'll wanna do after opening up your terminal is run the command "node index.js"
